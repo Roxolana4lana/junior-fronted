@@ -5,5 +5,5 @@ export const Slide = styled.img`
   width: 250px;
   border-radius: 0.5rem;
   box-shadow: 0 1rem 4rem 0 rgba(21, 20, 50, 0.1);
-  margin: 2rem 1rem 3rem;
+  margin: 2rem 0.5rem 3rem;
 `;

@@ -2,10 +2,10 @@ import styled, { keyframes } from "styled-components";
 
 const myAnimation = keyframes`
   from {
-    transform: translateX(0);
+    transform: translateX(-1000px);
   }
   to {
-    transform: translateX(-1000px);
+    transform: translateX(0);
   }
 `;
 
