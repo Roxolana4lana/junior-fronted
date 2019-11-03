@@ -48,7 +48,7 @@ export const Sliders = styled.div`
 `;
 export const SliderWrapper = styled.div`
   height: 200px;
-  width: 250px;
+  width: 300px;
 `;
 
 export const Slider = styled.div`
