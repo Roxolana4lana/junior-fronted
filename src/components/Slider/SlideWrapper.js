@@ -21,10 +21,11 @@ export default class SlideWrapper extends Component {
     }));
   }
   render() {
+    const { images } = this.state;
     return (
       <Sliders>
         <Slider>
-          {this.state.images.map((image, i) => (
+          {images.map((image, i) => (
             <SliderWrapper key={i}>
               <Slide src={image} alt="" />
             </SliderWrapper>

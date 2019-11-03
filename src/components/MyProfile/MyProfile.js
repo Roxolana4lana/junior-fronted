@@ -23,10 +23,11 @@ export default class MyProfile extends Component {
   }
 
   render() {
+    const { name, image } = this.state;
     return (
       <Container>
-        <p>{this.state.name}</p>
-        <Image src={this.state.image} />
+        <p>{name}</p>
+        <Image src={image} />
       </Container>
     );
   }
