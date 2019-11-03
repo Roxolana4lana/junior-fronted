@@ -1,7 +1,6 @@
 import React from "react";
 import { Ul, Li } from "./styles";
 import { Link, withRouter } from "react-router-dom";
-import "./styles.scss";
 
 const Navigation = () => {
   return (
