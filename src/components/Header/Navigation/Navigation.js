@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
+import MyProfile from "../../MyProfile/MyProfile";
 
 const Navigation = () => {
   return (
@@ -9,7 +10,7 @@ const Navigation = () => {
           <Link to="/">Start</Link>
         </li>
         <li>
-          <Link to="/">My Profile</Link>
+          <Link to="/my-profile">My Profile</Link>
         </li>
       </ul>
     </div>
