@@ -7,13 +7,16 @@ import { Header } from "components/Header";
 import { Home } from "pages/Home";
 
 import { GlobalStyle, theme } from "./styles";
+import { Route, HashRouter } from "react-router-dom";
 
 export const App = () => (
-  <ThemeProvider theme={theme}>
-    <Normalize />
-    <GlobalStyle />
-    <Header />
+  <HashRouter>
+    <ThemeProvider theme={theme}>
+      <Normalize />
+      <GlobalStyle />
 
-    <Home />
-  </ThemeProvider>
+      <Header />
+      <Route exact path="/" component={Home}></Route>
+    </ThemeProvider>
+  </HashRouter>
 );
