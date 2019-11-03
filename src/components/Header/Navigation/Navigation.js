@@ -1,18 +1,19 @@
 import React from "react";
+import { Ul, Li } from "./styles";
 import { Link, withRouter } from "react-router-dom";
-import MyProfile from "../../MyProfile/MyProfile";
+import "./styles.scss";
 
 const Navigation = () => {
   return (
     <div className="navigation">
-      <ul>
-        <li>
+      <Ul>
+        <Li>
           <Link to="/">Start</Link>
-        </li>
-        <li>
+        </Li>
+        <Li>
           <Link to="/my-profile">My Profile</Link>
-        </li>
-      </ul>
+        </Li>
+      </Ul>
     </div>
   );
 };

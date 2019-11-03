@@ -8,7 +8,7 @@ import slide5 from "./assets/photos/slide-5.jpg";
 import slide6 from "./assets/photos/slide-6.jpg";
 import "./style.scss";
 
-export default class SlideWrapper extends React.Component {
+export default class SlideWrapper extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -22,15 +22,13 @@ export default class SlideWrapper extends React.Component {
   }
   render() {
     return (
-      <div className="main">
+      <div className="slider-container">
         <div className="slider">
-          <div className="slide-track">
-            {this.state.images.map((image, i) => (
-              <div className="slide" key={i}>
-                <Slide src={image} alt="" />
-              </div>
-            ))}
-          </div>
+          {this.state.images.map((image, i) => (
+            <div className="slide" key={i}>
+              <Slide src={image} alt="" />
+            </div>
+          ))}
         </div>
       </div>
     );

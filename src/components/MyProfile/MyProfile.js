@@ -1,12 +1,12 @@
 import React, { Component } from "react";
+import { Container, Image } from "./styles";
 import axios from "axios";
-
-// const keyApi = process.env.REACT_APP_KEY_API
 
 export default class MyProfile extends Component {
   state = {
     name: "",
-    image: ""
+    image:
+      "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
   };
   componentDidMount() {
     axios
@@ -24,10 +24,10 @@ export default class MyProfile extends Component {
 
   render() {
     return (
-      <div className="FindMore">
+      <Container>
         <p>{this.state.name}</p>
-        <img src={this.state.image} />
-      </div>
+        <Image src={this.state.image} />
+      </Container>
     );
   }
 }

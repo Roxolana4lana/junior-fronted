@@ -1,12 +1,4 @@
-@keyframes myAnimation {
-  100% {
-    transform: translateX(0);
-  }
-  0% {
-    transform: translateX(calc(-250px * 7));
-  }
-}
-.slider {
+.slider-container {
   background-color: #f8fafd;
   height: 260px;
   margin: auto;
@@ -24,7 +16,7 @@
     content: "";
     height: 260px;
     position: absolute;
-    width: 200px;
+    width: 100px;
     z-index: 10;
   }
 
@@ -39,8 +31,16 @@
     top: 0;
   }
 
-  .slide-track {
-    animation: myAnimation 30s linear infinite;
+  @keyframes myAnimation {
+    100% {
+      transform: translateX(0);
+    }
+    0% {
+      transform: translateX(-1000px);
+    }
+  }
+  .slider {
+    animation: myAnimation 50s linear infinite;
     display: flex;
   }
 
